@@ -71,7 +71,7 @@ h6 {
 	// background-color: #4f3aff;
 	// padding: 5px;
 	@include media(max-width $screen-column-collapse) {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
