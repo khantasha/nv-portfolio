@@ -971,6 +971,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/natasha-vicens-resume.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/images/natasha-vicens-resume.pdf",
+		"oF": 0
+		},
 	"/images/pattern.jpg": {
 		"ft": 16384,
 		"iS": 2813130,
@@ -998,6 +1006,17 @@
 		"iS": 1935041,
 		"oA": 0,
 		"oAP": "/images/race.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/resume.png": {
+		"ft": 32768,
+		"iS": 772017,
+		"oA": 0,
+		"oAP": "/images/resume.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
