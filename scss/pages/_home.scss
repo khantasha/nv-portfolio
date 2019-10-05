@@ -1,0 +1,240 @@
+//
+// Home
+// --------------------------------------------------
+
+.main{
+    @include rem(margin-top, 20px);
+    // @include rem(padding-bottom, 10px);
+}
+
+.container-about {
+    margin-top: 1%;
+    @include outer-container(1060px);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+        @include rem(font-size, 22px);
+    }
+}
+
+.container-about p {
+  @include rem(font-size, 16px);
+  margin-top: 0 !important;
+      @include rem(line-height, 21px);
+  // font-weight: 600;
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 16.5px);
+    }
+}
+
+.container-resume {
+    margin-top: 1%;
+    @include outer-container(1200px);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+        @include rem(font-size, 22px);
+    }
+}
+
+.container-resume p {
+  @include rem(font-size, 16px);
+  margin-top: 0 !important;
+      @include rem(line-height, 21px);
+  // font-weight: 600;
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 16.5px);
+    }
+}
+
+.about-two-column-box {
+  margin-top: 2%;
+	@include span-columns(12);
+	@media(max-width: $screen-mobile){
+		@include span-columns(12 of 12);
+	}
+}
+
+.sidebyside {
+	@include span-columns(6 of 12);
+		@media(max-width: $screen-mobile){
+			@include span-columns(12 of 12);
+		}
+  img {
+    width: 550px;
+  }
+}
+
+.margin-design {
+  margin-left: 80px;
+  @media(max-width: $screen-mobile){
+    margin: 0 auto;
+  }
+}
+
+.home-header {
+    @include rem(padding, 10px 0px 10px);
+}
+
+h1.home-header__headline{
+    //text-transform: uppercase;
+    margin: 0px;
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 5em;
+    letter-spacing: .01em;
+    text-align: center;
+    @include media(max-width $screen-mobile) {
+        font-size: 3em;
+    }
+}
+
+h4.home-header__headline{
+    font-weight: 300;
+    text-align: center;
+}
+
+h2.home-header__subheadline{
+    @include rem(font-size, 14px);
+    font-weight: 500;
+    @include rem(margin-top, 10px);
+    @include rem(margin-bottom, 5px);
+    @include media(max-width $screen-column-collapse) {
+        @include rem(font-size, 30px);
+    }
+}
+
+h4.home-header__subheadline{
+    @include rem(font-size, 16.5px);
+    font-weight: 500;
+    @include rem(margin-top, 10px);
+    @include rem(margin-bottom, 5px);
+    @include media(max-width $screen-column-collapse) {
+        @include rem(font-size, 30px);
+    }
+}
+
+.home-stories__grid{
+    @include outer-container(1200px);
+}
+
+.grid-sizer,
+.grid-item{
+    @include media(min-width $screen-mobile) {
+        width: 400px;
+    }
+    padding: 10px;
+}
+
+//.grid-item{
+//    min-height: 235px;
+//}
+
+.grid-item__link{
+    position: relative;
+}
+
+.grid-item__header{
+    opacity: 0;
+}
+
+.grid-item__link:hover .grid-item__header{
+    @include transition(opacity .15s linear);
+    display: block;
+    opacity: 1;
+    @include media(max-width $screen-column-collapse) {
+        display: none;
+    }
+}
+
+h2.grid-item__headline{
+    color: #4f3aff;
+    font-weight: 800;
+    font-size: 1.15em;
+    margin-left: .5em;
+    // text-transform: uppercase;
+    a{
+    @include transition(color .15s linear);
+    text-decoration: none;
+    color: #4f3aff;
+    &:hover{
+        color: $brand-darkgrey;
+    }
+}
+}
+
+h3.grid-item__sub-headline{
+    font-size: .95em;
+    //text-transform: uppercase;
+    font-weight: 500;
+}
+
+h2.grid-mobile-head{
+  color: black;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-left: .5em;
+  display: none;
+  @include media(max-width $screen-column-collapse) {
+      display: block;
+  }
+}
+
+h3.grid-mobile-subhead{
+    font-size: 1em;
+    font-weight: 500;
+    //text-transform: uppercase;
+    display: none;
+    margin-bottom: 1em;
+    @include media(max-width $screen-column-collapse) {
+        display: block;
+    }
+}
+
+.grid-item__link:hover img,
+.grid-item__link:hover video{
+    @include media(min-width $screen-column-collapse) {
+        @include transition(opacity .15s linear);
+        opacity: .4;
+    }
+}
+
+.grid-item__header{
+    display: none;
+    left: 10px;
+    position: absolute;
+    z-index: 3;
+}
+
+.grid-item__cover{
+    background-color: rgba(0,0,0,.2);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* This used to work for the parent element of button divs */
+/* But it does not work with newer browsers, the below doesn't hide the play button parent div */
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}

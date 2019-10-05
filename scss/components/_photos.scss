@@ -1,0 +1,9 @@
+.middle-caption {
+	font-size: .67em !important;
+	text-align: center;
+	margin-bottom: 3em !important;
+	@media(max-width: $screen-mobile){
+		@include outer-container(100%);
+			font-size: .65em !important;
+	}
+}

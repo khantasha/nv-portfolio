@@ -1,0 +1,102 @@
+//
+// Typography
+// --------------------------------------------------
+
+@include selection {
+	background-color: #4f3aff;
+	color: white;
+}
+
+html{
+	font-size: 100%; /* Sets baseline of 16px for REM calculations */
+	@include media(max-width 1260px) {
+		font-size: 90%;
+	}
+	@include media(max-width 882px) {
+		font-size: 80%;
+	}
+}
+
+body{
+	background-color: white;
+	color: $brand-black;
+	font-family: 'Montserrat', sans-serif;
+	// font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	@include rem(font-size, 17.5px)
+}
+
+i {
+	color: white;
+	text-align: center;
+}
+
+h2,
+h3{
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.2;
+}
+
+h3 {
+	font-size: 1.8em;
+	text-align: center;
+	// text-transform: uppercase;
+	font-weight: 800 !important;
+	color: #4f3aff !important;
+	// background-color: #4f3aff;
+	// padding: 5px;
+	@include media(max-width $screen-column-collapse) {
+    font-size: 1.3em;
+  }
+}
+
+h5 {
+	font-size: 1.1em;
+	font-weight: 800 !important;
+	color: white !important;
+	background-color: #4f3aff;
+	padding: 10px;
+	text-align: center;
+	margin-right: .5em;
+}
+
+h6 {
+	font-size: 1.1em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500 !important;
+	color: #4f3aff !important;
+	margin: 10px auto;
+	margin-bottom: 40px;
+	// background-color: #4f3aff;
+	// padding: 5px;
+	@include media(max-width $screen-column-collapse) {
+    font-size: 1.3em;
+  }
+}
+
+p,
+li{
+	line-height: 1.4;
+	//@include rem(margin, 0px 0px 10px);
+}
+
+a{
+	@include transition(color .15s linear);
+	text-decoration: none;
+	padding: 1px;
+	color: black;
+	&:hover{
+		color: #4f3aff;
+	}
+}
+
+span{
+    display:inline-block;
+    padding-top: 1px;
+		border-bottom: 1px solid white;
+		&:hover{
+			border-bottom: 1px solid #4f3aff;
+			padding-top: 1px;
+		}
+}

@@ -1,0 +1,144 @@
+.blockquote {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-darkishgreen;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-royalblue {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-royalblue;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-red {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-red;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-seablue {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-seablue;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-brightred {
+	font-family: 'Cutive Mono';
+	color: $brand-brightred;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-purple {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-purple;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-blue {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-brightblue;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-orange {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-yellow;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+
+}
+
+.blockquote-salmon {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: $brand-salmon;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+}
+
+.blockquote-teal {
+	font-size: 1.5em;
+	font-family: 'Cutive';
+	color: #7c9c93;
+	line-height: 1.25em;
+	text-align: left;
+	@media(max-width: $screen-mobile){
+		font-size: 1.4em;
+		line-height: 1.2em;
+		padding-bottom: 5%;
+	}
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}

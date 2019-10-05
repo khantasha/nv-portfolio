@@ -1,0 +1,71 @@
+//
+// Wraps
+// --------------------------------------------------
+
+
+.box-story {
+    @include outer-container(760px);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+        @include rem(font-size, 22px);
+    }
+}
+
+.box-story p {
+  @include rem(font-size, 17.5px);
+  // @include rem(line-height, 26px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 24px);
+      @include rem(line-height, 32px);
+    }
+}
+
+.box-story ol, ul {
+  font-family: 'Crimson-Text';
+  @include rem(font-size, 22px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 24px);
+      @include rem(line-height, 32px);
+    }
+}
+
+.box-story b {
+  font-family: 'Mallory';
+  font-weight: 600;
+  @include rem(font-size, 20px);
+  @include rem(line-height, 30px);
+  color: black;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 21.5px)
+    }
+}
+
+.box-story h2 {
+  font-family: 'Mallory';
+  font-weight: 500;
+  @include rem(font-size, 36px);
+  @include rem(line-height, 30px);
+  color: black;
+  margin: 1.5em 0 1.5em 0;
+    @include media(max-width $screen-column-collapse) {
+      @include rem(font-size, 30px)
+    }
+}
+
+.box-story h6 {
+  @include outer-container (56%);
+  color: $brand-black;
+  text-align: center;
+  font-weight: 300;
+  font-size: .8em;
+  font-family: 'Mallory';
+  margin-top: -1em;
+  @media(max-width: $screen-column-collapse){
+    @include outer-container(100%);
+    font-size: .6em;
+    margin-top: 1em;
+  }
+}

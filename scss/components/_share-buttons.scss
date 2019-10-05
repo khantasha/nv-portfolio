@@ -1,0 +1,24 @@
+.social-bottom-box {
+	@include span-columns(2 of 12);
+	@include shift(5);
+}
+
+.social-links-bottom{
+    display: inline-block;
+    align-items: center;
+}
+
+.social-links-bottom path{
+	fill: $brand-yellow;
+    @include transition(fill .15s linear);
+}
+
+.social-links-bottom:hover path{
+    fill: $brand-teal;
+}
+
+.img-social-icon-bottom{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}

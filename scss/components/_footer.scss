@@ -1,0 +1,65 @@
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #111111 !default;
+  $medium-screen: 40em !default;
+  $large-screen: 53.75em !default;
+  $footer-background: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-link-color: white;
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $brand-black;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+  margin-top: 4%;
+
+  .footer-logo {
+    margin-bottom: 1em;
+    text-align: center;
+
+    img {
+      height: 5em;
+    }
+  }
+
+  .footer-links {
+    @include display(flex);
+    @include justify-content(space-around);
+    margin-bottom: $base-spacing;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2em 2em 2.3em;
+  }
+
+  p.tagline{
+    color: #ffffff;
+    font-size: .85em;
+  }
+
+  .footer-links a{
+    font-size: 1.1em;
+    color: #ffffff;
+    &:hover{
+      color: $brand-blue;
+    }
+  }
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 12em;
+  }
+
+  p {
+    color: $footer-disclaimer-color;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+  }
+}
+
+.footer-margin {
+  margin-top: 65em;
+}

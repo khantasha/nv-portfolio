@@ -1,0 +1,36 @@
+//
+// General layout elements
+// --------------------------------------------------
+
+//
+// Media Queries
+// --------------------------------------------------
+
+$screen-larger: 1300px;
+$screen-lg: 1100px;
+$screen-table-collapse: 850px;
+$screen-mobile: 769px;
+$screen-graphics: 750px;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {  
+  height: auto !important;  
+}  
+
+body {
+  margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+

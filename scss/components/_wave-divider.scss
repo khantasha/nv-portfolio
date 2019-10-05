@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+html *,
+html :before,
+html :after {
+  box-sizing: inherit;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300px 0;
+  }
+}
+.wave {
+  width: 300px;
+  margin: .5rem auto;
+  margin-right: 4em;
+  position: relative;
+  height: 24px;
+  background: url("https://ps-apps-assets.s3.amazonaws.com/watershed/wave+(1)-01.svg") repeat-x 0%;
+  background-size: contain;
+  -webkit-animation: 30s wave linear infinite;
+          animation: 30s wave linear infinite;
+  box-shadow: inner 0 0 1rem red;
+}
+.wave::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, white 75%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,69 @@
+// More stories
+
+.container-morestories {
+  background-color: $brand-black;
+}
+
+.more-box {
+    @include span-columns (12 of 12);
+    //margin: 1em 0 1em 0;
+}
+
+.more-box-second {
+    @include span-columns (12 of 12);
+    margin: -2em 0 3em 0;
+    @include media(max-width $screen-column-collapse) {
+        margin: 0 0 3em 0;
+    }
+}
+
+.more-stories-wrap {
+    @include outer-container(80%);
+    @include media(max-width $screen-column-collapse) {
+        @include outer-container(90%);
+    }
+}
+
+.more-box-item-fourths {
+    @include span-columns (2 of 12);
+    text-align:center;
+    font-size: .96em;
+    @include media(max-width $screen-column-collapse){
+        @include span-columns (12 of 12);
+        margin-bottom: 2em;
+        font-size: 1.25em;
+    }
+}
+
+
+i {
+    color: #44d199;
+}
+
+.more-stories-lead{
+    font-weight: 500;
+    line-height: 1.1;
+    padding-top: 1em;
+    padding-right: .5em;
+    padding-left: .5em;
+    @include media(min-width $screen-column-collapse){
+        @include rem(font-size, 32px);
+    }
+    @include media(max-width $screen-column-collapse){
+        @include rem(font-size, 28px);
+    }
+}
+
+.more-headline {
+    font-family: "Mallory";
+    text-align: left;
+    line-height: 1.2;
+    padding-right: 1.8em;
+      a {
+            @include transition(color .15s linear);
+            color: white;
+            &:hover{
+                color: $brand-blue;
+            }
+        }
+}

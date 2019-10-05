@@ -1,0 +1,13 @@
+.divider-top {
+  @include outer-container(50%);
+  border-bottom: 1px solid #4f3aff;
+  // margin-bottom: 1em;
+  margin-top: 2.5em;
+}
+
+.divider-design {
+  @include outer-container(50%);
+  border-bottom: 1px solid #4f3aff;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
