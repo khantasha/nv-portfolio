@@ -84,7 +84,6 @@ li{
 a{
 	@include transition(color .15s linear);
 	text-decoration: none;
-	padding: 1px;
 	color: black;
 	&:hover{
 		color: #4f3aff;
