@@ -19,7 +19,7 @@
 .container-about p {
   @include rem(font-size, 16px);
   margin-top: 0 !important;
-      @include rem(line-height, 21px);
+  @include rem(line-height, 22px);
   // font-weight: 600;
   color: black;
     @include media(max-width $screen-column-collapse) {
