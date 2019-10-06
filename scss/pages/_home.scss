@@ -23,7 +23,8 @@
   // font-weight: 600;
   color: black;
     @include media(max-width $screen-column-collapse) {
-      @include rem(font-size, 16.5px);
+      @include rem(font-size, 22px);
+      line-height: 1.4em;
     }
 }
 
