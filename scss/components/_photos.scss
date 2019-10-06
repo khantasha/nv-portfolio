@@ -4,6 +4,6 @@
 	margin-bottom: 3em !important;
 	@media(max-width: $screen-mobile){
 		@include outer-container(100%);
-			font-size: .65em !important;
+			font-size: .5em !important;
 	}
 }

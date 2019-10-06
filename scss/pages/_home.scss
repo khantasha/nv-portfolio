@@ -110,7 +110,8 @@ h4.home-header__subheadline{
     @include rem(margin-top, 10px);
     @include rem(margin-bottom, 5px);
     @include media(max-width $screen-column-collapse) {
-        @include rem(font-size, 17.5px);
+        font-size: .9em;
+        line-height: 1.6em;
     }
 }
 

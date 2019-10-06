@@ -16,8 +16,7 @@
   // @include rem(line-height, 26px);
   color: black;
     @include media(max-width $screen-column-collapse) {
-      @include rem(font-size, 24px);
-      @include rem(line-height, 32px);
+      @include rem(font-size, 22px);
     }
 }
 
