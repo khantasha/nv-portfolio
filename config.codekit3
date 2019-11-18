@@ -806,6 +806,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/good_river.png": {
+		"ft": 32768,
+		"iS": 4043903,
+		"oA": 0,
+		"oAP": "/images/good_river.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/index-photos/16.png": {
 		"ft": 32768,
 		"iS": 294792,
